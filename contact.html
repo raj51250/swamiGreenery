@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Swami Greenery</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/logo1.png">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300 border-b border-gray-100">
+        <div class="container mx-auto px-3">
+            <div class="flex justify-between items-center py-3">
+                
+                <div class="flex items-center group">
+                    <img src="images/logo1.png" alt="Swami Greenery Logo" class="w-13 h-10 md:w-13 md:h-12 transition-transform group-hover:scale-105"/>
+                    <div class="ml-3">
+                        <span class="text-2xl font-semibold text-gray-900 font-sans tracking-tight">
+                            Swami<span class="text-emerald-600">Greenery</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-200 relative group">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="products.html" class="text-sm font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-200 relative group">
+                        Products
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="services.html" class="text-sm font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-200 relative group">
+                        Services
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-200 relative group">
+                        About Us
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="contact.html" class="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300 shadow-emerald-200 hover:shadow-emerald-300">
+                        Contact
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center space-x-4">
+                    <button id="menuBtn" class="text-gray-600 hover:text-emerald-600 transition-colors focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-sm px-6 py-3 transform origin-top transition-all duration-300 border-t border-gray-100">
+            <a href="index.html" class="block py-3.5 text-gray-700 hover:text-emerald-600 transition-colors border-b border-gray-100 font-medium flex items-center">
+                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></span>
+                Home
+            </a>
+            <a href="products.html" class="block py-3.5 text-gray-700 hover:text-emerald-600 transition-colors border-b border-gray-100 font-medium flex items-center">
+                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></span>
+                Products
+            </a>
+            <a href="services.html" class="block py-3.5 text-gray-700 hover:text-emerald-600 transition-colors border-b border-gray-100 font-medium flex items-center">
+                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></span>
+                Services
+            </a>
+            <a href="about.html" class="block py-3.5 text-gray-700 hover:text-emerald-600 transition-colors border-b border-gray-100 font-medium flex items-center">
+                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></span>
+                About Us
+            </a>
+            <a href="contact.html" class="mt-4 block w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-center px-5 py-3 rounded-lg text-sm font-medium hover:shadow-lg transition-all duration-300">
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="py-16 bg-gradient-to-r from-emerald-50 to-teal-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Get In Touch</h1>
+                <p class="text-lg text-gray-600">Have questions about our planters or need a customized solution? Reach out to our team - we're here to help!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Send us a message</h2>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Information</h2>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-emerald-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Address</h3>
+                                <p class="text-gray-600">123 Green Street, Plant City, Bangalore, India - 560001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-emerald-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Phone</h3>
+                                <p class="text-gray-600">+91 98765 43210</p>
+                                <p class="text-gray-600">+91 91234 56789</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-emerald-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-emerald-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Email</h3>
+                                <p class="text-gray-600">info@swamigreenery.com</p>
+                                <p class="text-gray-600">support@swamigreenery.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4">Business Hours</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Monday - Friday</span>
+                                <span class="font-medium">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Saturday</span>
+                                <span class="font-medium">10:00 AM - 4:00 PM</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span class="text-gray-600">Sunday</span>
+                                <span class="font-medium">Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Find Us Here</h2>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">
+                    <!-- Replace with actual map embed code -->
+                    <div class="w-full h-96 flex items-center justify-center bg-emerald-100 rounded-lg">
+                        <div class="text-center">
+                            <i class="fas fa-map-marked-alt text-5xl text-emerald-600 mb-4"></i>
+                            <p class="text-gray-600">Map will be embedded here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Frequently Asked Questions</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <button class="flex justify-between items-center w-full text-left font-semibold text-gray-800">
+                        <span>What types of planters do you offer?</span>
+                        <i class="fas fa-chevron-down text-emerald-600"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        We offer a wide range of planters including plastic planters, roto-moulded planters, fiber planters, designer planters, and large outdoor planters. Each type is designed for specific needs and environments.
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <button class="flex justify-between items-center w-full text-left font-semibold text-gray-800">
+                        <span>Do you offer customization options?</span>
+                        <i class="fas fa-chevron-down text-emerald-600"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        Yes, we provide customization services for size, color, and shape to meet your specific requirements. Contact our team with your needs, and we'll create a solution tailored for you.
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <button class="flex justify-between items-center w-full text-left font-semibold text-gray-800">
+                        <span>What is your minimum order quantity for bulk orders?</span>
+                        <i class="fas fa-chevron-down text-emerald-600"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        Our minimum order quantity varies based on the product type and customization requirements. Please contact our sales team for specific details regarding bulk orders.
+                    </div>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <button class="flex justify-between items-center w-full text-left font-semibold text-gray-800">
+                        <span>What are your delivery timelines?</span>
+                        <i class="fas fa-chevron-down text-emerald-600"></i>
+                    </button>
+                    <div class="mt-4 text-gray-600">
+                        Standard products are typically delivered within 7-10 business days. Customized orders and bulk quantities may require additional time. We'll provide an estimated timeline when you place your order.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="images/logo1.png" alt="Swami Greenery Logo" class="h-10 mr-3">
+                        <span class="text-xl font-semibold">Swami<span class="text-emerald-400">Greenery</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Giving plants the homes they deserve with premium, sustainable planters.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Plastic Planters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Roto-moulded Planters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Fiber Planters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Designer Planters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Large Outdoor Planters</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-emerald-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">123 Green Street, Plant City, India</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-emerald-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-emerald-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">info@swamigreenery.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">Copyright © 2025 Swami Greenery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

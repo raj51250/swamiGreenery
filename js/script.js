@@ -167,5 +167,100 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         showSlide(currentSlide);
-        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+        setInterval(nextSlide, 4000); // Change slide every 3 seconds
     });
+
+
+    ///new :
+    document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!menuBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    }
+    
+    // Animate elements on scroll
+    const animateElements = document.querySelectorAll('[data-animate]');
+    
+    const animateOnScroll = function() {
+        const windowHeight = window.innerHeight;
+        const windowTopPosition = window.scrollY;
+        const windowBottomPosition = (windowTopPosition + windowHeight);
+        
+        animateElements.forEach(element => {
+            const elementHeight = element.offsetHeight;
+            const elementTopPosition = element.offsetTop;
+            const elementBottomPosition = (elementTopPosition + elementHeight);
+            
+            // Check if element is within viewport
+            if ((elementBottomPosition >= windowTopPosition) &&
+                (elementTopPosition <= windowBottomPosition)) {
+                const delay = element.getAttribute('data-delay') || 0;
+                
+                setTimeout(() => {
+                    element.classList.add('animate');
+                }, delay);
+            }
+        });
+    };
+    
+    // Initialize animation on load
+    if (animateElements.length > 0) {
+        animateOnScroll();
+        window.addEventListener('scroll', animateOnScroll);
+    }
+    
+    // FAQ Accordion functionality
+    const faqButtons = document.querySelectorAll('.faq-button');
+    
+    if (faqButtons.length > 0) {
+        faqButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const isActive = content.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                document.querySelectorAll('.faq-button i').forEach(icon => {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    content.classList.add('active');
+                    button.querySelector('i').classList.remove('fa-chevron-down');
+                    button.querySelector('i').classList.add('fa-chevron-up');
+                }
+            });
+        });
+    }
+    
+    // Add scroll effect to navbar
+    const nav = document.querySelector('nav');
+    if (nav) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg', 'py-3');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.remove('shadow-lg', 'py-3');
+                nav.classList.add('py-4');
+            }
+        });
+    }
+});

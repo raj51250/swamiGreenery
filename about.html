@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Swami Greenery</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/logo1.png">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-all duration-300 border-b border-gray-100">
+        <div class="container mx-auto px-3">
+            <div class="flex justify-between items-center py-3">
+                
+                <div class="flex items-center group">
+                    <img src="images/logo1.png" alt="Swami Greenery Logo" class="w-13 h-10 md:w-13 md:h-12 transition-transform group-hover:scale-105"/>
+                    <div class="ml-3">
+                        <span class="text-2xl font-semibold text-gray-900 font-sans tracking-tight">
+                            Swami<span class="text-emerald-600">Greenery</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-200 relative group">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="products.html" class="text-sm font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-200 relative group">
+                        Products
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="services.html" class="text-sm font-medium text-gray-600 hover:text-emerald-600 transition-colors duration-200 relative group">
+                        Services
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-500 transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                    <a href="about.html" class="text-sm font-medium text-emerald-600 transition-colors duration-200 relative group">
+                        About Us
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-emerald-500"></span>
+                    </a>
+                    <a href="contact.html" class="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300 shadow-emerald-200 hover:shadow-emerald-300">
+                        Contact
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center space-x-4">
+                    <button id="menuBtn" class="text-gray-600 hover:text-emerald-600 transition-colors focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-white/95 backdrop-blur-sm px-6 py-3 transform origin-top transition-all duration-300 border-t border-gray-100">
+            <a href="index.html" class="block py-3.5 text-gray-700 hover:text-emerald-600 transition-colors border-b border-gray-100 font-medium flex items-center">
+                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></span>
+                Home
+            </a>
+            <a href="products.html" class="block py-3.5 text-gray-700 hover:text-emerald-600 transition-colors border-b border-gray-100 font-medium flex items-center">
+                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></span>
+                Products
+            </a>
+            <a href="services.html" class="block py-3.5 text-gray-700 hover:text-emerald-600 transition-colors border-b border-gray-100 font-medium flex items-center">
+                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></span>
+                Services
+            </a>
+            <a href="about.html" class="block py-3.5 text-emerald-600 transition-colors border-b border-gray-100 font-medium flex items-center">
+                <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></span>
+                About Us
+            </a>
+            <a href="contact.html" class="mt-4 block w-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-center px-5 py-3 rounded-lg text-sm font-medium hover:shadow-lg transition-all duration-300">
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="py-16 bg-gradient-to-r from-emerald-50 to-teal-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">About Swami Greenery</h1>
+                <p class="text-lg text-gray-600">At Swami Greenery, we believe every plant deserves a beautiful home. Our journey began with a passion for nature and design, with the goal of making modern, stylish, and sustainable planters accessible to everyone.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-10 mb-16">
+                <div class="md:w-1/2">
+                    <img src="images/about-1.jpg" alt="About Swami Greenery" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
+                    <p class="text-gray-600 mb-4">Founded with a vision to transform how people integrate greenery into their living and working spaces, Swami Greenery has grown from a small startup to a trusted name in premium planters across India.</p>
+                    <p class="text-gray-600 mb-4">We combine durability, innovation, and aesthetics to give your plants the perfect companion. Whether you're decorating your balcony, designing an office interior, or building large landscapes, our planters are crafted to suit every environment.</p>
+                    <p class="text-gray-600">Our commitment to quality and sustainability has earned us the trust of homeowners, corporates, landscapers, and nurseries across the country.</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="images/about-2.jpg" alt="Our Vision" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Vision</h2>
+                    <p class="text-gray-600 mb-6">To be India's most trusted brand for sustainable and stylish planters, creating greener and more livable spaces across homes, offices, and communities.</p>
+                    
+                    <div class="bg-emerald-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-emerald-800 mb-4">Why Choose Us?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Premium quality materials and craftsmanship</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Eco-friendly and sustainable manufacturing processes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Wide range of products for every need and budget</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Customization options for unique requirements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-emerald-600 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Bulk supply capabilities for large projects</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Team</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Meet the passionate individuals behind Swami Greenery</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="images/team-1.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Rajesh Swami</h3>
+                    <p class="text-emerald-600 mb-3">Founder & CEO</p>
+                    <p class="text-gray-600">With over 15 years of experience in manufacturing and a passion for gardening, Rajesh founded Swami Greenery to combine both his expertise and passion.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="images/team-2.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Priya Sharma</h3>
+                    <p class="text-emerald-600 mb-3">Head of Design</p>
+                    <p class="text-gray-600">Priya brings her expertise in product design and sustainable materials to create planters that are both beautiful and environmentally responsible.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="images/team-3.jpg" alt="Team Member" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-semibold mb-2">Vikram Singh</h3>
+                    <p class="text-emerald-600 mb-3">Operations Manager</p>
+                    <p class="text-gray-600">Vikram ensures that our manufacturing processes are efficient, sustainable, and meet the highest quality standards that our customers expect.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="images/logo1.png" alt="Swami Greenery Logo" class="h-10 mr-3">
+                        <span class="text-xl font-semibold">Swami<span class="text-emerald-400">Greenery</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Giving plants the homes they deserve with premium, sustainable planters.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Plastic Planters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Roto-moulded Planters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Fiber Planters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Designer Planters</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Large Outdoor Planters</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-emerald-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">123 Green Street, Plant City, India</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-emerald-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-emerald-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">info@swamigreenery.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">Copyright © 2025 Swami Greenery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
